@@ -1,0 +1,33 @@
+
+.CurrentWeek {
+    background-color: #189a64!important;
+    color :white!important;
+    font-weight: bold;
+}
+
+.NextWeek {
+    background-color: yellow!important;
+    font-weight: bold;
+}
+
+.CurrentWeekAnalysis {
+    background-color: #ff5551!important;
+    font-weight: bold;
+    color :white!important;
+}
+
+
+.Daily {
+    background-color: lightgreen;
+    font-weight: bold;
+}
+
+.TableDock {
+    padding:  5% 0;
+}
+
+@media(max-width : 500px) {
+    .TableDock {
+        padding:  5% 0;
+    }
+}

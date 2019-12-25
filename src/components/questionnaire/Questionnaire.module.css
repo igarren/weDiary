@@ -1,0 +1,28 @@
+.Questionnaire {
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.Label {
+    padding: 5px; 
+    font-weight: bold;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+.Button {
+    padding:0 1px!important;
+}
+
+.ButtonGroup {
+    padding: 2px 13px!important;
+}
+
+.Blue {
+    background: lightblue;
+}
+
+.Yellow {
+    background: lightyellow;
+}

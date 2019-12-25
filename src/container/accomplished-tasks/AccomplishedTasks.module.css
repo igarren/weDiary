@@ -1,0 +1,12 @@
+.AccomplishedTasks {
+  
+    padding: 5% 10%;
+  }
+  
+  
+  @media(max-width : 500px) {
+    .AccomplishedTasks {
+      padding: 5% 5%;
+    }
+  
+  }

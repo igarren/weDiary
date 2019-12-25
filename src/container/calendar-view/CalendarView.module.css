@@ -1,0 +1,11 @@
+.CalendarView {
+    padding: 5% 10%;
+  }
+  
+  
+  @media(max-width : 500px) {
+    .CalendarView {
+      padding: 5% 5%;
+    }
+  
+  }

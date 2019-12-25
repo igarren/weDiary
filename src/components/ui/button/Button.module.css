@@ -1,0 +1,22 @@
+
+.Main {
+    background-color: #189a64!important;
+    color :white!important;
+ }
+
+.Question {
+    font-size: 12px!important;         
+}
+.Question p{
+    font-size: 8.5px!important;         
+}
+ 
+@media(max-width : 500px) {
+    .Main {
+        padding: 8px !important;
+     }
+
+     .Question {
+        padding: 5px !important;
+     }
+}
