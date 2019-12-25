@@ -6,7 +6,7 @@ const headerNavigation = (props) => {
 
     return (
         <>
-            <Menu className='borderless' inverted style={{background: '#189a64'}}>
+            <Menu widths={3} className='borderless' inverted style={{background: '#189a64'}}>
                 <Menu.Item 　header style={{border: 'none'}}><h3>WEDiary</h3></Menu.Item>
                
                 <Menu.Item header style={{border: 'none'}}><h5>ワーク・エンゲージメント
