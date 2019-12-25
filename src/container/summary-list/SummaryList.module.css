@@ -1,0 +1,14 @@
+
+.SummaryList {
+    padding: 5% 10%;
+}
+
+
+.Button {
+    padding: 0 3.5px !important;
+}
+@media(max-width : 500px) {
+    .SummaryList {
+        padding: 5% 5%;
+    }
+}
