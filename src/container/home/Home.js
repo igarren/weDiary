@@ -1,7 +1,6 @@
 import React, { useState} from 'react';
 
 import { Grid } from 'semantic-ui-react';
-import { connect } from 'react-redux';
 import HeaderNavigation from '../../components/header-navigation/HeaderNavigation';
 import Button from '../../components/ui/button/Button.js';
 import Table from '../../components/ui/table/Table.js';

@@ -1,6 +1,5 @@
 import React from 'react';
 import classes from './DataInput.module.css';
-import {connect} from 'react-redux';
 import SubHeader from '../../components/header-navigation/sub-header/SubHeader';
 import TextArea from '../../components/ui/text-area/TextArea';
 
