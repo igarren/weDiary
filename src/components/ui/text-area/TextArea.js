@@ -1,9 +1,9 @@
 import React from 'react';
 import { Form } from 'semantic-ui-react';
-
+import classes from './TextArea.module.css';
 const textArea = (props) => (
 
-    <Form>
+    <Form className={classes.TextArea}>
 
         <Form.TextArea
             value={props.value}

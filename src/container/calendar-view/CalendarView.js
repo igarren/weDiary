@@ -16,7 +16,7 @@ const calendarView = props => {
     return (
         <>
             <SubHeader header='カレンダー選択' />
-            <div className={classes.CalendarView}>
+            <div className='Container'>
 
                 <Calendar select={editDailyInfoDataHandler} />
                 <TextArea label='今日できたこと' placeholder='今日、仕事でできたことを書いてください' />

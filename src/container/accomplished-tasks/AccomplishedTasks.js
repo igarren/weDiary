@@ -11,7 +11,7 @@ const accomplishedTasks = (props) => {
     return (
         <>
             <SubHeader header='できたこと入力' />
-            <div className={classes.AccomplishedTasks}>
+            <div className='Container'>
                 <TextArea label='今日できたこと' placeholder='' changed={props.onChangeValue} />
                 <Questionnaire labelType = 'Blue' label = '仕事をして精力的になるのを感じた' />
                 <Questionnaire labelType = 'Blue' label = '「仕事に行きたい」という気持ちになった' />

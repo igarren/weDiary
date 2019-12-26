@@ -1,12 +1,10 @@
 .App {
   text-align: center;
-  padding: 5% 10%;
+
 }
 
 
 @media(max-width : 500px) {
-  .App {
-    padding: 5% 5%;
-  }
+
 
 }

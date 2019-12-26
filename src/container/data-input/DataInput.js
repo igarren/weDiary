@@ -24,7 +24,7 @@ const dataInput = (props) => {
             break;
         case 'current-analysis':
             header = 'ふりかえり入力';
-            header = 'ふりかえり';
+            label = 'ふりかえり';
             placeholder = 'ふりかえり入力';
             action = 'CURRENT_ANALYSIS';
             textArea = props.currentWeekAnalysis
@@ -42,30 +42,11 @@ const dataInput = (props) => {
     return (
         <>
             <SubHeader header={header} />
-            <div className={classes.DataInput}>
-                <TextArea label={label} placeholder={placeholder} changed={props.onChangeValue} value={textArea}  />
+            <div className='Container'>
+                <TextArea label={label} placeholder={placeholder} value={textArea}  />
             </div>
         </>
     )
 };
 
-
-const mapStateToProps = state => {
-    return {
-        currentWeekGoal: state.currentWeekGoal,
-        currentWeekAnalysis: state.currentWeekAnalysis,
-        nextWeekGoal : state.nextWeekGoal
-    }
-};
-
-
-const mapDispatchToProps = dispatch => {
-    return {
-        onChangeValue : (event) => dispatch({ type: action, value: event.target.value}),
-    }
-};
-
-
-
-
-export default connect(mapStateToProps, mapDispatchToProps)(dataInput);
+export default dataInput;

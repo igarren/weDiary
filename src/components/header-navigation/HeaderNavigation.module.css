@@ -1,8 +1,52 @@
+.Header{
+    font-size: 20px;
+}
 
+.ItemCustom{
+    justify-content: left!important;
+    
+}
+
+.ItemCustom h2 {
+    margin-left: 20px;  
+}
+
+.MobileDisplay{
+    display: none;
+}
+
+.Logo {
+    padding: 5px!important;
+}
  
-@media(max-width : 500px) {
+
+@media(max-width : 768px) {
+    .Header{
+        font-size: 12px;
+    }
+    
+
     .Logo {
         padding: 0 !important;
+        min-width: 2.5rem!important;
+    }
+
+    .DesktopDisplay{
+        display: none
+    }
+
+    .MobileDisplay{
+        display: block;
+    }
+
+
+    .ItemCustom{
+        justify-content: center!important;
+        
+    }
+    
+    .ItemCustom h2 {
+        margin-left: 0;  
     }
     
 }

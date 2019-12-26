@@ -1,8 +1,31 @@
 body {
- 
+  background-color: #e6eaec;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.ButtonNotPadded {
+  padding: 0 3.5px !important;
+}
+
+.HomeButtonGroup {
+  max-width: 50%;
+}
+
+.Container {
+  padding: 0 10%;
+}
+
+@media(max-width: 1000px) {
+  .HomeButtonGroup {
+    max-width: 100%;
+  }
+}
+
+@media(max-width: 500px) {
+  .Container {
+    padding: 0 5%;
+  }
 }

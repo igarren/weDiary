@@ -7,17 +7,15 @@ import classes from './TableInput.module.css';
 const tableInput = (props) => {
     const editMainInfoDataHandler = (action) => (props.history.push('/edit/' + action));
     return (
-            <Table.Row>
-                <Table.Cell
-                    textAlign='center'
-                    className={classes[props.class]}
-                    width={props.firstWidth}>
+            <Table.Row className={[classes.TableHeader, classes[props.class]].join(' ')}>
+                <Table.HeaderCell
+                    textAlign='center' >
                     {props.children}
-                </Table.Cell>
+                </Table.HeaderCell>
+
                 <Table.Cell
-                    width={props.secondWidth}
                     colSpan='2'
-                    onClick={() => editMainInfoDataHandler(props.action)}>{props.data} </Table.Cell>
+                    onClick={() => editMainInfoDataHandler(props.action)}>{props.data} </Table.Cell> 
             </Table.Row>
     )
 }

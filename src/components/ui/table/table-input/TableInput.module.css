@@ -1,17 +1,34 @@
-.CurrentWeek {
+.TableHeader th{
+    color :white!important;
+    font-weight: bold;
+    width:120px!important;
+}
+
+.TableHeader p{
+    padding: 10px!important;
+}
+
+
+.CurrentWeek th{
     background-color: #189a64!important;
-    color :white!important;
-    font-weight: bold;
 }
 
-.NextWeek {
-    background-color: yellow!important;
-    font-weight: bold;
-}
 
-.CurrentWeekAnalysis {
+.CurrentWeekAnalysis th{
     background-color: #ff5551!important;
-    font-weight: bold;
-    color :white!important;
 }
 
+
+.NextWeek th{
+    background-color: yellow!important;
+    color :black!important;
+}
+
+
+
+@media(max-width : 500px) {
+    .TableHeader th{
+        width:90px!important;
+    }
+    
+}

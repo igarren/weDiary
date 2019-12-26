@@ -1,3 +1,9 @@
 .Calendar {
     width: 100% !important;
+    font-weight: bold;
 }
+
+.Calendar > div:first-child {
+    background: linear-gradient(to bottom, #ffffff 0%, #cccccc 100%)
+}
+

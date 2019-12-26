@@ -18,17 +18,17 @@ const table = (props) => {
         <TableInput
             data={props.currentWeekGoal}
             firstWidth='5'
-            secondWidth='13'
+            secondWidth='11'
             action='current-week'
-            class='CurrentWeek'> 今週の目標<br />やりたいこと </TableInput>);
+            class='CurrentWeek'> <p> 今週の目標<br />やりたいこと </p></TableInput>);
 
     if (props.currentWeekAnalysis) weekAnalysis = (
         <TableInput
             data={props.currentWeekAnalysis}
             firstWidth='5'
-            secondWidth='13'
+            secondWidth='11'
             action='current-analysis'
-            class='CurrentWeekAnalysis'> ふりかえり</TableInput>);
+            class='CurrentWeekAnalysis'> <p>ふりかえり</p></TableInput>);
 
     if (props.nextWeekGoal) nextWeek = (
         <Table unstackable celled >
@@ -36,9 +36,9 @@ const table = (props) => {
         <TableInput
             data={props.nextWeekGoal}
             firstWidth='5'
-            secondWidth='16'
+            secondWidth='11'
             action='next-week'
-            class='NextWeek'>  来週の目標<br />やりたいこと </TableInput></Table.Body></Table>);
+            class='NextWeek'>  <p>来週の目標<br />やりたいこと</p></TableInput></Table.Body></Table>);
     return (
         <div className={classes.TableDock} >
             <Table unstackable celled className={classes.Table}>
