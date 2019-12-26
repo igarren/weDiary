@@ -27,8 +27,6 @@
 
 
 @media(max-width : 500px) {
-    .TableHeader th{
-        width:90px!important;
-    }
+  
     
 }

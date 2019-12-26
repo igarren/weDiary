@@ -11,7 +11,9 @@ const headerNavigation = (props) => {
                 <Menu.Item className={classes.ItemCustom} 　header ><h2 style={{ textShadow: '3px 2px gray' }}>WEDiary</h2></Menu.Item>
 
                 <Menu.Item widths={2} header style={{ textAlign: 'left' }}>
-                    <p className={classes.Header}>ワーク・エンゲージメント
+                    <p className={classes.Header}>ワーク
+                    <span className={classes.DesktopDisplay}>・</span>
+                    <br className={classes.MobileDisplay}/>エンゲージメント
                     <br className={classes.MobileDisplay}/>ダイアリー</p></Menu.Item>
 
                 <Menu.Menu  icon='labeled' position='right' >
