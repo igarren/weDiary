@@ -1,6 +1,6 @@
 import React from 'react';
 import { Menu, Icon } from 'semantic-ui-react';
-import { withRouter } from 'react-router-dom';
+import { withRouter,NavLink } from 'react-router-dom';
 import classes from './SubHeader.module.css';
 
 const subHeader = (props) => {
@@ -11,15 +11,17 @@ const subHeader = (props) => {
             <Menu.Menu position='right'>
             <Menu.Item
               name='signup'
+              as={NavLink}
+              to='/home'
             >
-              Sign Up
+              <Icon  name='home' size='large' />
             </Menu.Item>
   
-            <Menu.Item
+            {/* <Menu.Item
               name='help'
             >
               Help
-            </Menu.Item>
+            </Menu.Item> */}
           </Menu.Menu>
         );
     }

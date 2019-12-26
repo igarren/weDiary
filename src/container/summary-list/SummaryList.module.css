@@ -3,6 +3,9 @@
     padding: 5% 10%;
 }
 
+.Input {
+    height: 30px;
+}
 
 .Button {
     padding: 0 3.5px !important;

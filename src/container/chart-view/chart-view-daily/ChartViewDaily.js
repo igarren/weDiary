@@ -32,12 +32,12 @@ const ChartViewDaily = (props) => {
     return (
         <>
 
-            <SubHeader header='週間チャート' />
+            <SubHeader showSubMenu header='週間チャート' />
             <div className='Container'>
                 <Grid style={{ marginBottom: '10px' }} centered columns={4}>
                     <Grid.Row className='HomeButtonGroup'>
                         <Grid.Column className='ButtonNotPadded' width={2}> <Button btnType='action' btnStyle='Main'> ≪ </Button> </Grid.Column>
-                        <Grid.Column className='ButtonNotPadded' width={5}> <Button btnType='action' btnStyle='Main'> 今週 </Button>  </Grid.Column>
+                        <Grid.Column className='ButtonNotPadded' width={8}> <Button btnType='action' btnStyle='Main'> 今週 </Button>  </Grid.Column>
                         <Grid.Column className='ButtonNotPadded' width={2}> <Button btnType='action' btnStyle='Main'> ≫ </Button>  </Grid.Column>
                         <Grid.Column className='ButtonNotPadded' width={4}> <Button btnType='navigate' btnStyle='Main' path='/chart-view-monthly'> 1ヶ月 </Button>  </Grid.Column>
                     </Grid.Row>

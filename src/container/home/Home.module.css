@@ -1,16 +1,6 @@
 
-.HomeButtonGroup{
-    max-width: 50%;
-    
-}
 .Button {
     padding: 0 3.5px !important;
 }
 
 
-@media(max-width : 1000px) {
-
-    .HomeButtonGroup{
-        max-width: 100%;
-    }
-}

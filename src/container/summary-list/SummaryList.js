@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid } from 'semantic-ui-react';
+import { Grid , Input, Icon} from 'semantic-ui-react';
 
 import Table from '../../components/ui/table/Table';
 import SubHeader from '../../components/header-navigation/sub-header/SubHeader';
@@ -33,12 +33,12 @@ const summaryList = (props) => {
             <SubHeader header='できたこと一覧'/>
             <div className='Container'>
                 <Grid centered columns={5}> 
-                    <Grid.Row>
+                    <Grid.Row className='HomeButtonGroup'>
                         <Grid.Column className='ButtonNotPadded' width={2}> <Button btnType='action' btnStyle='Main'> ≪ </Button> </Grid.Column>
                         <Grid.Column className='ButtonNotPadded' width={3}> <Button btnType='action' btnStyle='Main'> 最新 </Button>  </Grid.Column>
                         <Grid.Column className='ButtonNotPadded' width={2}> <Button btnType='action' btnStyle='Main'> ≫ </Button>  </Grid.Column>
-                        {/* <Grid.Column className='ButtonNotPadded'width={3}> <Button btnType='navigate' btnStyle='Main' path='/summary-list'> 一覧 </Button>  </Grid.Column> */}
-                        {/* <Grid.Column className='ButtonNotPadded'width={5}> <Button btnType='navigate' btnStyle='Main' path='/calendar'> カレンダー </Button>  </Grid.Column> */}
+                        <Grid.Column className='ButtonNotPadded' width={7}> <Input fluid placeholder='検索' className={classes.Input}/>  </Grid.Column>
+                        <Grid.Column className='ButtonNotPadded' width={2}> <Icon  name='search' size='large'/> </Grid.Column>
                     </Grid.Row>
                 </Grid>
                 <Table weekData={sampleData} />

@@ -15,7 +15,7 @@ const calendarView = props => {
     };
     return (
         <>
-            <SubHeader header='カレンダー選択' />
+            <SubHeader showSubMenu header='カレンダー選択' />
             <div className='Container'>
 
                 <Calendar select={editDailyInfoDataHandler} />

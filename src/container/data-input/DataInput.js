@@ -11,7 +11,8 @@ const dataInput = (props) => {
     let placeholder = '';
     let textArea = '';
 
-  
+    const temporaryHeader = '2019年12月23日～2019年12月27日';
+
 
     switch (props.match.params['action']) {
         case 'current-week':
@@ -41,8 +42,11 @@ const dataInput = (props) => {
     return (
         <>
             <SubHeader header={header} />
+            <div style={{ textAlign: 'center', marginBottom: '10px' }}>
+                <h4>{temporaryHeader}</h4>
+            </div>
             <div className='Container'>
-                <TextArea label={label} placeholder={placeholder} value={textArea}  />
+                <TextArea label={label} placeholder={placeholder} value={textArea} />
             </div>
         </>
     )
